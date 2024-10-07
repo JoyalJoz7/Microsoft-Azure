@@ -447,6 +447,7 @@ body{
     text-align:center;
     color:rgb(0, 66, 117);
     background-color:rgba(0, 85, 151, 0.1);
+    font-family:'semi-bold';
 }
 .pill-item{
     font-size:15px;
@@ -617,6 +618,11 @@ body{
     border:0;
     background:rgba(0, 0, 0, 0);
 }
+.view-all-cont{
+    letter-spacing:-0.48px;
+    font-family:'semi-bold';
+    font-size:14px;
+}
 .view-all-spn{
     background-color:rgb(0,120,212);
     border-radius:8px;
@@ -631,6 +637,173 @@ body{
     font-family:'fluenticon';
     font-size:15px;
 }
+.fourth-part{
+    padding-top:56px;
+    padding-bottom:56px;
+    background-image:url(images/Mobile-product-BG-2x.avif);
+    background-size:cover;
+}
+#products-services{
+    padding-left:16px;
+    padding-right:16px;
+}
+.headings-services{
+    margin-left:-4px;
+    margin-right:-4px;
+}
+.head-p-s{
+    padding-left:4px;
+    padding-right:4px;
+}
+.smallhead-ps{
+    font-size:12px;
+    font-family:'semi-bold';
+    letter-spacing:0.96px;
+    color:rgb(23, 37, 61);
+}
+.mainhead-ps{
+    font-family:'semi-bold';
+    letter-spacing:-1.4px;
+    color:rgb(14, 23, 38);
+}
+.contents-services{
+    margin-top:32px;
+    padding-left:4px;
+    padding-right:4px;
+    display:flex;
+    flex-direction:column;
+    row-gap:32px;
+    column-gap:32px;
+}
+.pns-flex-cont{
+    display:flex;
+    flex-direction:column;
+}
+.pns-flex-container{
+    margin-top:32px;
+    display:flex;
+    flex-direction:column;
+    row-gap:12px;
+}
+#products-flex-first{
+    display:flex;
+    flex-direction:column;
+    padding:16px;
+    background-image:url(images/ProductandServices-PromoCard-320x592.avif);
+    background-repeat:no-repeat;
+    background-size:cover;
+    border-radius:16px;
+}
+.blank-space{
+    height:220px;
+}
+.content-safety-head{
+    color:rgb(244, 250, 253);
+    font-family:'semi-bold';
+    font-size:20px;
+    letter-spacing: -1.2px;
+}
+.content-safety-para{
+    color:rgb(244, 250, 253);
+}
+.content-safety-btn a{
+    display:flex;
+    justify-content:center;
+    padding:12px;
+    background-color:rgb(179, 218, 240);
+    border-radius:8px;
+}
+.content-safety-btn span{
+    letter-spacing:-0.3px;
+    font-family:'semi-bold';
+}
+#products-card{
+    padding:16px;
+    display:flex;
+    flex-direction:column;
+    row-gap:12px;
+    background-color:rgb(254, 254, 254);
+    border-radius:16px;
+}
+.block-product-badge{
+    width:48px;
+    display:flex;
+    justify-content:center;
+    height:48px;
+    border:1px solid rgb(230, 242, 251);
+    border-radius:8px;
+}
+.block-product-badge img{
+    width:24px;
+}
+.main-head-card h4{
+    margin:0;
+    font-family:'semi-bold';
+    letter-spacing:-1px;
+}
+.fifth-part{
+    padding-bottom:48px;
+    padding-top:48px;
+    background-image:url(images/Mobile-Gartner-BG-2x.avif);
+}
+.blog-div{
+    padding-left:16px;
+    padding-right:16px;
+    margin-top:24px;
+}
+.blog-div{
+}
+.blog-inner-div{
+    background-color:rgb(255,255,255);
+    border-radius:16px;
+    box-shadow:rgba(0, 0, 0, 0.12) 0px 0px 2px 0px, rgba(0, 0, 0, 0.14) 0px 2px 4px 0px;
+}
+.blog-img{
+    padding:8px 12px 0px 12px;
+}
+.blog-img img{
+    max-width:100%;
+    border-radius:8px;
+}
+.blog-content{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    row-gap:12px;
+}
+.blog-cont-head h2{
+    margin:0;
+    font-family:'semi-bold';
+    letter-spacing: -1.4px;
+}
+.blog-cont-para{
+    letter-spacing:-.03em;
+    font-size:18px;
+    line-height:28px;
+}
+.blog-link{
+    padding:15px 12px;
+    background-color:rgb(0, 120, 212);
+    color:rgb(255,255,255);
+    border-radius:8px;
+    width:100%;
+    border:0;
+    font-size: 15px;
+    font-family:'semi-bold';
+}
+.blog-main-cont{
+    display:flex;
+    flex-direction:column;
+    row-gap:32px;
+    padding:16px;
+}
+
+
+
+
+
+
+
 
 
 
