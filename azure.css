@@ -1098,19 +1098,104 @@ body{
     column-gap:12px;
     overflow:auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+.stories-cont-second{
+    margin-top:24px;
+}
+.next-step{
+    background-image:url(images/361349-mobile-3-up-card-next-step-bg-360x764.avif);
+    background-size:cover;
+    background-position:center;
+    padding-top:56px;
+    padding-bottom:56px;
+}
+.step-container{
+    padding-left:16px;
+    padding-right:16px;
+}
+.flex-step{
+    padding-left:4px;
+    padding-right:4px;
+    display:flex;
+    flex-direction:column;
+    row-gap:8px;
+    column-gap:12px;
+}
+.step-head{
+    text-align:center;
+    color:rgb(244, 250, 253);
+}
+.steps-card{
+    background-color:rgb(254,254,254);
+    border-radius:16px;
+    padding:16px;
+}
+.steps-content{
+    display:flex;
+    flex-direction:column;
+    row-gap:12px;
+}
+.steps-content h3{
+    margin:0;
+    font-family:'semi-bold';
+}
+.steps-btn{
+    margin-top:32px;
+}
+.utility-container{
+    padding:24px 16px;
+}
+.utility-social{
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+.social-head div{
+    width:auto;
+    /* margin:8px 0px; */
+    padding:12px;
+    font-family:'semi-bold';
+    display:flex;
+    align-items:center;
+    
+}
+.social-head img{
+    width:24px;
+    margin-right:8px;
+}
+.social-follow{
+    background-color:rgb(230, 230, 230);
+}
+.social-icons{
+    display:flex;  
+    gap:15px;
+    margin:7px; 
+    margin-left:20px;
+}
+.social-icons img{
+    width:24px;
+}
+.footer{
+    margin-top:48px;
+    background-color:#eeeeee;
+}
+.whole-table{
+    padding-right:12px;
+    padding-left:12px;
+}
+.table-head{
+    font-family:'semi-bold';
+}
+.footer-tables{
+    padding:0px 12px;
+}
+.table-lists{
+    list-style-type:none;
+    padding:0;
+}
+.table-lists li{
+    padding:8px 0px;
+    font-size:11px;
+}
 
 
 
