@@ -1361,11 +1361,18 @@ footer{
 }
 @media screen and (min-width:767px){}
 @media screen and (min-width:860px){
-    .master-image{
-        position:absolute;
+    .first-part{
+        display:flex;
     }
     #primaryArea{
-        position:relative;
+        position:absolute;
+        display:flex;
+    }
+    .row{
+        flex-basis:50%;
+    }
+    .row-section-master-slot{
+        flex-basis:50%;
     }
     .heading-title-data h1{
         font-size:40px;
@@ -1390,10 +1397,7 @@ footer{
         flex-grow:0;
         flex-shrink:0;
     }
-    .blog-main-cont{
-        /* max-width:50%;
-        flex-basis:50%; */
-    }
+    
 }
 @media screen and (min-width:1024px){}
 @media screen and (min-width:1440px){}
