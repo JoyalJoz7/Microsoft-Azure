@@ -742,8 +742,10 @@ picture{
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
-
+    box-shadow:rgba(0, 0, 0, 0.12) 0px 0px 2px 0px, rgba(0, 0, 0, 0.14) 0px 2px 4px 0px;
     border-radius:16px;
+    aspect-ratio: 21/9;
+    justify-content:space-between ;
 }
 .blank-space{
     height:220px;
@@ -778,13 +780,30 @@ picture{
     letter-spacing:-0.3px;
     font-family:'semi-bold';
 }
+.products-card{
+    display:flex;
+    width:100%;
+}
 #products-card{
+    flex:1 1 auto;
+    width:100%;
     padding:16px;
     display:flex;
+    justify-content:space-between;
     flex-direction:column;
-    row-gap:12px;
+    /* row-gap:12px; */
     background-color:rgb(254, 254, 254);
     border-radius:16px;
+    box-shadow:rgba(0, 0, 0, 0.12) 0px 0px 2px 0px, rgba(0, 0, 0, 0.14) 0px 2px 4px 0px;
+
+}
+.link-card{
+    margin-top:32px;
+}
+.top-content{
+    display:flex;
+    flex-direction:column;
+    gap:0.75rem;
 }
 .block-product-badge{
     width:48px;
@@ -801,6 +820,10 @@ picture{
     margin:0;
     font-family:'semi-bold';
     letter-spacing:-1px;
+}
+.para-card{
+    font-size:1rem;
+    letter-spacing:-0.03em
 }
 .fifth-part{
     padding-bottom:48px;
@@ -998,18 +1021,25 @@ picture{
 .global-head{
     font-family:'semi-bold';
     letter-spacing:-1.4px;
-    font-size:22px;
+    font-size:21px;
+    line-height:40px;
+}
+.global-head h2{
+    margin:0;
 }
 .global-para{
     margin-top:16px;
     padding-left:16px;
     padding-right:16px;
     font-size:18px;
+    letter-spacing:-0.54px;
+    line-height:28px;
     color:rgb(220, 238, 248);
     font-weight:400;
 }
 .global-btn{
     margin-top:24px;
+    margin-bottom:24px;
 }
 .glob-btn{
     padding:12px;
@@ -1024,6 +1054,7 @@ picture{
     padding-bottom:2px;
     font-family:'semi-bold';
     font-size:15px;
+    /* font-weight:500; */
 }
 .customer-stories{
     padding-bottom:48px;
@@ -1332,7 +1363,26 @@ footer{
 .stories-logo{
     display:none;
 }
-
+.block-heading-slot{
+    display:flex;
+    column-gap:8px;
+    row-gap:8px;
+}
+.btn1{
+    background-color:transparent;
+    border-radius:8px;
+    border:2px solid rgb(141, 200, 232);
+    box-sizing:border-box;
+    color:rgb(244, 250, 253);
+    font-family:'semi-bold';
+    cursor:pointer;
+    letter-spacing:-0.3px;
+    text-align:center;
+    padding:12px;
+    position:relative;
+    text-decoration:none;
+    font-size:15px;
+}
 
 
 
@@ -1348,7 +1398,7 @@ footer{
         align-items: flex-start;
     }
     #primaryArea{
-        padding-inline:68px;
+        padding-inline:60px;
     }
     .first-table{
         display:grid;
@@ -1401,6 +1451,9 @@ footer{
 }
 @media screen and (min-width:767px){}
 @media screen and (min-width:860px){
+    .blog-main-cont{
+        row-gap:6em;
+    }
     .tab-arrows{
         display:none;
     }
@@ -1501,7 +1554,7 @@ footer{
     #primaryArea{
         position:absolute;
         display:flex;
-        top:120px;
+        top:126px;
     }
     .row{
         flex-basis:50%;
@@ -1518,19 +1571,22 @@ footer{
     }
     .products-card-grid{
         grid-template-columns:repeat(3,1fr);
+        gap:1rem;
     }
     .blog-inner-div{
         display:flex;
         flex-direction:row-reverse;
     }
     .blog-img img{
-        height:98%;
+        height:100%;
+        object-fit: cover;
     }
     .blog-img{
         max-width:50%;
         flex-basis:50%;
         flex-grow:0;
         flex-shrink:0;
+        padding-bottom:8px;
     }
     .chatgpt{
         display:inline;
@@ -1631,8 +1687,9 @@ footer{
     .ai-list-tags{
         list-style-type: none;
         display:flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         row-gap:16px;
+        column-gap: 16px;
         flex-wrap:wrap;
     }
     .ai-chat-message{
@@ -1700,9 +1757,10 @@ footer{
     .stories-img-div{
         flex-basis:50%;
         box-sizing:border-box;
+        padding-bottom:8px;
     }
     .stories-img-div img{
-        height:98%;
+        height:100%;
         object-fit:cover;
     }
     .stories-content{
@@ -1759,7 +1817,7 @@ footer{
         list-style-type:none;
         display:flex;
         justify-content:center;
-        align-items:center;
+        /* align-items:center; */
         height:104px;
         padding:0;
         margin:30px 0px 0px 0px;
@@ -1816,7 +1874,65 @@ footer{
     .ai-listing h3{
         text-align:left;
     }
+    .third-part{
+        padding-top:96px;
+        padding-bottom:96px
+    }
+    .fourth-part{
+        padding-top:96px;
+        padding-bottom:96px;
+    }
+    .fifth-part{
+        padding-top:72px;
+        padding-bottom:72px;
+    }
+    .master-image img{
+        height:628px;
+        object-fit: cover;
+    }
+    .block-heading-paragraph{
+        padding-right:48px;
+        margin-top:24px;
+    }
+    .heading-data{
+        margin-bottom:12px;
+    }
+    .heading-title-data h1{
+        line-height:48px;
+        letter-spacing:-2px;
+    }
+    .para-data{
+        letter-spacing:-0.53px;
+    }
+    .block-heading-slot{
+        margin-top:32px;
+    }
+    .link-card{
+        margin-top:3rem;
+    }
+    .top-content{
+        row-gap:16px;
+    }
+    #products-card{
+        padding:24px;
+    }
+    .global-infra{
+        padding:96px 0px;
+    }
+    .global-para{
+        padding-inline:48px;
+        margin-top:24px;
+    }
+    .global-btn{
+        margin-top:32px;
+    }
+    .tab-panel-img{
+        width:66.667%;
+        padding:16px;
+        margin:auto;
+        margin-top:32px;
+    }
 }
-@media screen and (min-width:1024px){}
+@media screen and (min-width:1084px){}
 @media screen and (min-width:1440px){}
 @media screen and (min-width:1516px){}
