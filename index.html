@@ -25,20 +25,23 @@
                         <li>
                             <div><button class="header-list-btn">Explore</button></div>
                         </li>
-                        <li>
-                            <div><button class="header-list-btn">Products</button></div>
+                        <li >
+                            <div class="header-hid-btn-products"><button class="header-list-btn">Products</button></div>
                         </li>
-                        <li>
-                            <div><button class="header-list-btn">Solutions</button></div>
+                        <li >
+                            <div class="header-hid-btn-solutions"><button class="header-list-btn">Solutions</button></div>
                         </li>
-                        <li>
-                            <div><button class="header-list-btn">Pricing</button></div>
+                        <li >
+                            <div class="header-hid-btn-pricing"><button class="header-list-btn">Pricing</button></div>
                         </li>
-                        <li>
-                            <div><button class="header-list-btn">Partners</button></div>
+                        <li >
+                            <div class="header-hid-btn-partners"><button class="header-list-btn">Partners</button></div>
                         </li>
-                        <li>
-                            <div><button class="header-list-btn">Resources</button></div>
+                        <li >
+                            <div class="header-hid-btn-resources"><button class="header-list-btn">Resources</button></div>
+                        </li>
+                        <li >
+                            <div class="header-hid-btn-more"><button class="header-list-btn">More</button></div>
                         </li>
                     </ul>
                 </nav>
@@ -46,6 +49,26 @@
                     <button class="search-action">
                         <span></span>
                     </button>
+                </div>
+                <div class="medque-nav-right-head">
+                   <div class="right-head-inner">
+                    <div class="nav-right-search">
+                        <button class="nav-right-head-search">
+                            <span></span>
+                        </button>
+                    </div>
+                    <div>
+                        <nav class="right-head-nav">
+                            <ul>
+                                <li><a>Learn</a></li>
+                                <li><a>Support</a></li>
+                                <li><a>Contact Sales</a></li>
+                                <li><a class="right-head-blue-btn">Get started with Azure</a></li>
+                                <li><a class="right-head-signIn">Sign in</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                   </div>
                 </div>
             </div>
         </div>
@@ -225,44 +248,46 @@
                         </a>
                     </div>
                 </nav>
-                <nav class="mediaquery-nav">
-                    <div class="nav-titles">
-                        <div>
-                            <ul id="nav-titlebars">
-                                <li class="nav-title-pills">
-                                    <a class="selected-pill">
-                                        <span>Featured news</span>
-                                        <span class="indicator-pill"></span>
-                                    </a>
-                                </li>
-                                <li class="nav-title-pills">
-                                    <a>
-                                        <span>Solutions</span>
-                                    </a>
-                                </li>
-                                <li class="nav-title-pills">
-                                    <a>
-                                        <span>Products and services</span>
-                                    </a>
-                                </li>
-                                <li class="nav-title-pills">
-                                    <a><span>Resources by role</span></a>
-                                </li>
-                                <li class="nav-title-pills">
-                                    <a><span>Customer stories</span></a>
-                                </li>
-                            </ul>
+                <div class="inline">
+                    <nav class="mediaquery-nav">
+                        <div class="nav-titles">
+                            <div>
+                                <ul id="nav-titlebars">
+                                    <li class="nav-title-pills">
+                                        <a class="selected-pill">
+                                            <span>Featured news</span>
+                                            <span class="indicator-pill"></span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-title-pills">
+                                        <a>
+                                            <span>Solutions</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-title-pills">
+                                        <a>
+                                            <span>Products and services</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-title-pills">
+                                        <a><span>Resources by role</span></a>
+                                    </li>
+                                    <li class="nav-title-pills">
+                                        <a><span>Customer stories</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="slider-btn">
+    
+                            </button>
                         </div>
-                        <button class="slider-btn">
-
-                        </button>
-                    </div>
-                    <div class="nav-last-button">
-                        <a class="medquery-nav-btn">
-                            <span>Get started with Azure</span>
-                        </a>
-                    </div>
-                </nav>
+                        <div class="nav-last-button">
+                            <a class="medquery-nav-btn">
+                                <span>Get started with Azure</span>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
             </div>
         </div>
         <div class="horizontal-line"></div>
@@ -822,8 +847,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="stories-link-btn">
-                                        <button class="stories-btn"><span>Case study</span></button>
+                                    <div class="case-study">
+                                        <div class="stories-link-btn">
+                                            <button class="stories-btn"><span>Case study</span></button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -864,8 +891,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="stories-link-btn">
-                                        <button class="stories-btn"><span>Case study</span></button>
+                                    <div class="case-study">
+                                        <div class="stories-link-btn">
+                                            <button class="stories-btn"><span>Case study</span></button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -904,8 +933,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="stories-link-btn">
-                                        <button class="stories-btn"><span>Case study</span></button>
+                                    <div class="case-study">
+                                        <div class="stories-link-btn">
+                                            <button class="stories-btn"><span>Case study</span></button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -957,8 +988,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="stories-link-btn">
-                                        <button class="stories-btn"><span>Case study</span></button>
+                                    <div class="case-study">
+                                        <div class="stories-link-btn">
+                                            <button class="stories-btn"><span>Case study</span></button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -998,8 +1031,10 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="stories-link-btn">
-                                        <button class="stories-btn"><span>Case study</span></button>
+                                    <div class="case-study">
+                                        <div class="stories-link-btn">
+                                            <button class="stories-btn"><span>Case study</span></button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

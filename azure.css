@@ -907,6 +907,7 @@ picture{
     font-family:'semi-bold';
     text-align:center;
     font-size: 20px;
+    margin-bottom: 10px;
 }
 .res-main-head h2{
     margin:0;
@@ -1090,7 +1091,7 @@ picture{
     flex-direction:column;
 }
 #stories-flex{
-    flex-basis:98%;
+    flex-basis:100%;
     flex-shrink:0;
     flex-grow: 0;
     background-color:rgb(254, 254, 254);
@@ -1104,6 +1105,7 @@ picture{
 }
 .stories-img-div img{
     max-width:100%;
+    width: 100%;
     max-height:100%;
     border-radius:8px;
     object-fit:contain;
@@ -1133,6 +1135,7 @@ picture{
     height: 100%;
     justify-content:flex-end;
 }
+
 .links-products h3{
     margin:0;
     font-family:'semi-bold';
@@ -1285,7 +1288,7 @@ picture{
     width:24px;
 }
 footer{
-    margin-top:48px;
+    /* margin-top:48px; */
     background-color:rgb(244, 242, 242);
 }
 .whole-table{
@@ -1406,14 +1409,27 @@ footer{
 .list-f{
     display:none;
 }
-
-
-
-    
+.header-hid-btn-more{
+    display:none;
+}
+.medque-nav-right-head{
+    display:none;
+}
+.table-lists li:hover{
+    text-decoration: underline;
+    cursor:pointer;
+}
+.footer-base-nav li:hover{
+    text-decoration:underline;
+    cursor:pointer;
+}    
 
 @media screen and (min-width:375px){}
 @media screen and (min-width:425px){}
 @media screen and (min-width:540px){
+    .case-study{
+        display:flex;
+    }
     .button-heading{
         align-items: flex-start;
     }
@@ -1501,9 +1517,12 @@ footer{
     .center-header ul{
         list-style-type:none;
         padding-left:10px;
+        display:flex;
+        align-items:center;
     }
     .center-header ul li{
-        display:inline-block;
+        /* display:inline-block; */
+        /* display:flex; */
     }
     .header-list-btn{
         
@@ -1858,7 +1877,7 @@ footer{
         display:flex;
         justify-content:center;
         /* align-items:center; */
-        height:104px;
+        /* height:104px; */
         padding:0;
         margin:30px 0px 0px 0px;
         border-radius:16px;
@@ -1972,6 +1991,10 @@ footer{
         margin:auto;
         margin-top:32px;
     }
+    .tab-panel-group{
+        padding-top:32px;
+        padding-bottom:72px;
+    }
     .footer-base-nav{
         margin-left:30px;
     }
@@ -2006,12 +2029,15 @@ footer{
     .sticky-dropdn{
         justify-content:center;
         height:66px;
-        /* position:fixed;
+        position:sticky;
         top:0;
-        z-index:1; */
+        z-index:1;
     }
     #sticky-nav{
         display:none;
+    }
+    .inline{
+        display:inline;
     }
     .mediaquery-nav{
         display:inline;
@@ -2023,7 +2049,7 @@ footer{
     #nav-titlebars{
         display:flex;
         align-items:center;
-        max-width:550px;
+        max-width:100%;
         overflow:auto;
         margin:0;
         padding:0;
@@ -2034,10 +2060,8 @@ footer{
 
     .nav-title-pills{
         white-space:nowrap;
-        /* margin-top:1rem; */
         padding-left:4px;
         padding-bottom:4px;
-        /* width:fit-content; */
         list-style-type:none;
     }
     .nav-title-pills a{
@@ -2087,6 +2111,7 @@ footer{
     }
     .nav-titles{
         position:relative;
+        width:76%;
     }
     .slider-btn::after{
         content:"";
@@ -2115,10 +2140,113 @@ footer{
         padding-right:24px;
     }
 }
+@media screen and (min-width:1024px){
+    .slider-btn{
+        display:none;
+    }
+}
 @media screen and (min-width:1084px){
     .whole-table{
         display:grid;
         grid-template-columns:repeat(2,1fr);
+    }
+    .header-hid-btn-products{
+        display:none;
+    }
+    .header-hid-btn-solutions{
+        display:none;
+    }
+    .header-hid-btn-pricing{
+        display:none;
+    }
+    .header-hid-btn-partners{
+        display:none;
+    }
+    .header-hid-btn-resources{
+        display:none;
+    }
+    .header-hid-btn-more{
+        display:inline;
+    }
+    .search-action-header{
+        display:none;
+    }
+    .medque-nav-right-head{
+        display:inline;
+        position:absolute;
+        right:0;
+        /* flex-grow:0;
+        flex-shrink:0;
+        flex-basis:auto; */
+    }
+    .nav-right-head-search{
+        border:0;
+        height:32px;
+        background:transparent;
+        width:auto;
+        padding-top:15px;
+        padding-bottom:30px;
+        padding:9px;
+    }
+    .nav-right-head-search span::after{
+        content:"";
+        font-family:'MDL';
+        cursor:pointer;
+        font-size:16px;
+        display:inline-block;
+        color: rgb(0,0,0);
+    }
+    .nav-right-search{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .right-head-inner{
+        display:flex;
+    }
+    .header-container{
+        height:54px;
+    }
+    .right-head-nav ul{
+        display:flex;
+        list-style-type:none;
+        padding:0;
+    }
+    .right-head-nav a{
+        /* color:#262626; */
+        margin-top:1px;
+        padding:6px 8px 10px;
+        height:48px;
+        font-size:13px !important;
+    }
+    .right-head-blue-btn{
+        border-radius:3px;
+        border:1px solid;
+        margin:1px 8px;
+        margin-top:11px;
+        padding-top:4px;
+        background:#0078d4;
+        color:white;
+    }
+    .right-head-signIn{
+        border:1px solid;
+        border-radius:3px;
+        height:31px;
+        margin:1px 8px;
+        padding-top:4px;
+        font-weight:400;
+    }
+    #featured-news{
+        padding-inline:56px;
+    }
+    #products-services{
+        padding-inline:56px;
+    }
+    .blog-div{
+        padding-inline:56px;
+    }
+    .resources{
+        padding-inline:56px;
     }
 }
 @media screen and (min-width:1440px){
@@ -2135,3 +2263,34 @@ footer{
     }
 }
 @media screen and (min-width:1516px){}
+@media screen and (min-width:1110px){
+    .header-hid-btn-products{
+        display:inline;
+    }
+}
+@media screen and (min-width:1200px){
+    .header-hid-btn-solutions{
+        display:inline;
+    }
+}
+@media screen and (min-width:1285px){
+    .header-hid-btn-pricing{
+        display:inline;
+    }
+}
+@media screen and (min-width:1376px){
+    .header-hid-btn-partners{
+        display:inline;
+    }
+}
+@media screen and (min-width:1400px){
+    .header-hid-btn-partners{
+        display:none;
+    }
+    .nav-right-head-search::before{
+        content:'Search';
+    }
+    .nav-right-search{
+        display:flex;
+    }
+}
