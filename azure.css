@@ -451,11 +451,12 @@ picture {
 }
 
 .content-row-first {
+    margin-top:4px;
     color: rgb(14, 23, 38);
-    /* font-size:18px; */
+    font-size:15px;
     font-family: 'semi-bold';
     font-weight: 600;
-    letter-spacing: -0.54px;
+    letter-spacing: -0.28px;
     line-height: 24px;
 }
 
@@ -490,6 +491,7 @@ picture {
 
 .btn-AI {
     border-radius: 8px;
+    border:2px solid transparent;
     background-color: rgb(0, 120, 212);
     padding: 8px;
 }
@@ -541,6 +543,7 @@ picture {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    position:relative;
 }
 
 .tab-pills {
@@ -1839,12 +1842,39 @@ footer {
     text-decoration: underline;
     cursor: pointer;
 }
+.slider-pill-btn{
+    background-color:transparent;
+    border:0;
+    box-shadow:-14px 0px 20px 8px rgba(255, 255, 255, 0.814);
+    background:#ffffff87;
+    border:2px solid rgb(0, 66, 117);
+    border-radius:200px;
+    width:36px;
+    height:36px;
+    position:absolute;
+    top:3;
+    right:0;
+}
+.slider-pill-btn::after{
+    content: "";
+    font-family: 'fluenticon';
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(0, 66, 117);
+}
+
+
+
+
 
 @media screen and (min-width:375px) {}
 
 @media screen and (min-width:425px) {}
 
 @media screen and (min-width:540px) {
+    .block-heading-slot{
+        flex-direction:row;
+    }
     .promo-btn {
         display: flex;
     }
@@ -1930,6 +1960,10 @@ footer {
 @media screen and (min-width:767px) {}
 
 @media screen and (min-width:860px) {
+    .safe-area{
+        height:0;
+        max-height:330px;
+    }
     
     .ai-listing li{
         margin-left:3rem;
@@ -2085,12 +2119,15 @@ footer {
 
     .master-image {
         position: relative;
+        display:flex;
+        align-items:center;
     }
 
     #primaryArea {
         position: absolute;
         display: flex;
-        top: 126px;
+        /* top: 126px; */
+        margin-bottom:73px;
     }
 
     .row {
@@ -2734,6 +2771,9 @@ footer {
     .footer-base-nav ul li {
         padding-right: 24px;
     }
+    #products-services{
+        padding-inline:3.5rem;
+    }
 }
 
 @media screen and (min-width:1024px) {
@@ -2748,9 +2788,9 @@ footer {
     }
 
     .hidden-header{
-        padding:0 5%;s
+        padding:0 5%;
     }
-    
+
     .whole-table {
         margin: 0 auto;
         padding: 0 5%;
