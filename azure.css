@@ -22,7 +22,9 @@ body {
     margin: 0;
     font-family: 'fontazure';
 }
-
+/* .relative-div{
+    position:relative;
+} */
 .chatgpt {
     display: none;
 }
@@ -528,7 +530,7 @@ body {
 .sol-child-head {
     font-family: 'semi-bold';
     letter-spacing: -1.2px;
-    line-height: 33px;
+    line-height: 32px;
 }
 
 .sol-child-head h2 {
@@ -1606,7 +1608,12 @@ body {
     row-gap: 8px;
     column-gap: 12px;
 }
-
+.steps-flex{
+    display:flex;
+    flex-direction:column;
+    flex:1 1 auto;
+    /* height:100%; */
+}
 .step-head {
     text-align: center;
     color: rgb(244, 250, 253);
@@ -1615,6 +1622,8 @@ body {
 }
 
 .steps-card {
+    display:flex;
+    /* height: 100%; */
     background-color: rgb(254, 254, 254);
     border-radius: 16px;
     padding: 16px;
@@ -1841,8 +1850,8 @@ footer {
 .slider-pill-btn{
     background-color:transparent;
     border:0;
-    box-shadow:-14px 0px 20px 8px rgba(255, 255, 255, 0.814);
-    background:#ffffff87;
+    box-shadow:5px 4px 20px 20px rgba(255, 255, 255, 0.814);
+    background:#ffffffff;
     border:2px solid rgb(0, 66, 117);
     border-radius:200px;
     width:36px;
@@ -1868,6 +1877,24 @@ footer {
 @media screen and (min-width:425px) {}
 
 @media screen and (min-width:540px) {
+    .footer-base-nav{
+        margin-left:6px;
+    }
+    .contents-services{
+        padding-left:0px;
+    }
+    .ai-listing{
+        padding-left:0px;
+    }
+    .btn{
+        padding:12px 12px; 
+    }
+    .btn1{
+        padding:12px 12px;
+    }
+    .head-inner{
+        margin-left:5px;
+    }
     .block-heading-slot{
         flex-direction:row;
     }
@@ -1884,7 +1911,7 @@ footer {
     }
 
     #primaryArea {
-        padding-inline: 60px;
+        padding-inline: 68px;
     }
 
     .first-table {
@@ -1898,7 +1925,9 @@ footer {
     }
 
     #featured-news {
-        padding-inline: 64px;
+        padding-right:64px;
+        padding-left:59.5px;
+        /* padding-inline: 64px; */
     }
 
     #solutions {
@@ -1956,6 +1985,12 @@ footer {
 @media screen and (min-width:767px) {}
 
 @media screen and (min-width:860px) {
+    .btn{
+        padding:12px 16px;
+    }
+    .btn1{
+        padding:12px 16px;
+    }
     .tab-item{
         padding:1rem 1.5rem 1.5rem 1.5rem;
     }
@@ -2043,7 +2078,8 @@ footer {
         border-bottom:0;
         box-sizing: border-box;
         display: flex;
-        max-width: 2560px;
+        max-width: 1600px;
+        margin:0 auto;
     }
 
     .c-logo {
@@ -2133,6 +2169,7 @@ footer {
         margin-right:auto;
         max-width: 1328px;
         margin-bottom:73px;
+        padding-inline:60px;
     }
 
     .row {
@@ -2240,7 +2277,7 @@ footer {
     .assistant-content-para {
         font-size: 14px;
         letter-spacing: -0.42px;
-        line-height: 16px;
+        line-height: 20px;
     }
 
     .layout-ai-chat {
@@ -2273,8 +2310,6 @@ footer {
     .linear-border {
         height: 4px;
         background: linear-gradient(90deg, rgb(10, 134, 196) 0.3%, rgb(113, 237, 232) 100%);
-        border-bottom-left-radius: 8px;
-        border-bottom-right-radius: 8px;
     }
 
     .border-div-plus {
@@ -2283,6 +2318,7 @@ footer {
         border-bottom-left-radius: 5px;
         background-color: rgb(254, 254, 254);
         width: 100%;
+        overflow:hidden;
     }
 
     .ai-search-btn {
@@ -2598,10 +2634,15 @@ footer {
     }
 
     .tab-panel-img {
-        width: 66.667%;
-        padding: 16px;
-        margin: auto;
+        width: 61.3%;
+        padding: 24px;
+        margin-left: auto;
+        margin-right:auto;
         margin-top: 32px;
+        border-radius:24px;
+    }
+    .tab-panel-img img{
+        border-radius:8px;
     }
 
     .tab-panel-group {
@@ -2919,7 +2960,7 @@ footer {
     .right-head-nav a {
         /* color:#262626; */
         margin-top: 1px;
-        padding: 6px 8px 10px;
+        padding: 6px 8px 8px;
         height: 48px;
         font-size: 13px !important;
     }
@@ -2961,6 +3002,16 @@ footer {
 }
 
 @media screen and (min-width:1440px) {
+    .discover-head{
+        font-size:21px;
+        letter-spacing:-.05em;
+    }
+    .container{
+        padding-inline:5%;
+    }
+    .assistant-content-head{
+        font-size:1.25rem;
+    }
     #primaryArea{
         padding-inline:72px;
     }
@@ -3004,7 +3055,7 @@ footer {
         margin-left: auto;
         margin-right: auto;
         max-width: 1328px;
-        /* padding:62px; */
+        padding-inline:5%;
     }
 
     #featured-news {
