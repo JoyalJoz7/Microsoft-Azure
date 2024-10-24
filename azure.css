@@ -1985,6 +1985,9 @@ footer {
 @media screen and (min-width:767px) {}
 
 @media screen and (min-width:860px) {
+    .blog-img{
+        padding:8px 8px 0px 12px;
+    }
     .btn{
         padding:12px 16px;
     }
@@ -2564,8 +2567,18 @@ footer {
 
     .ai-listing h3 {
         text-align: left;
+        padding:32px 0;
     }
-
+    .explore-azure{
+        margin:0;
+    }
+    .list-a-content{
+        padding-bottom:34px;
+    }
+    .list-a-btn h3{
+        padding-top:0;
+        
+    }
     .third-part {
         padding-top: 96px;
         padding-bottom: 96px
@@ -3002,6 +3015,52 @@ footer {
 }
 
 @media screen and (min-width:1440px) {
+    .sol-child-head{
+        font-size:21px;
+        letter-spacing:-.05em;
+    }
+
+    .mainhead-ps{
+        font-size:21px;
+        letter-spacing:-.05em;
+    }
+    .inner-head h3{
+        font-size:32px;
+    }
+    .blog-cont-head{
+        line-height:40px;
+    }
+    .blog-cont-head h2{
+        font-size:32px;
+    }
+    .blog-cont-para{
+        font-size:20px;
+        letter-spacing:-0.54px;
+        line-height:32px;
+    }
+    .blog-content{
+        row-gap:16px;
+    }
+    .blog-link{
+        padding:16px 16px;
+    }
+    .blog-inner-div{
+        border-radius:24px;
+    }
+    .blog-img img{
+        border-radius:16px;
+    }
+    .res-main-head{
+        margin-bottom: 32px;
+    }
+    .res-main-head h2{
+        font-size:40px;
+        letter-spacing:-2px;
+    }
+    .activepill{
+        border-bottom-left-radius: 16px;
+        border-top-left-radius:16px;
+    }
     .discover-head{
         font-size:21px;
         letter-spacing:-.05em;
