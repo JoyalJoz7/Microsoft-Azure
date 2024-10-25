@@ -1436,7 +1436,7 @@ body {
     border-radius: 16px;
     display: flex;
     flex-direction: column;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px 0px, rgba(0, 0, 0, 0.14) 0px 2px 4px 0px;
+    /* box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px 0px, rgba(0, 0, 0, 0.14) 0px 2px 4px 0px; */
 }
 
 .stories-img-div {
@@ -1985,6 +1985,19 @@ footer {
 @media screen and (min-width:767px) {}
 
 @media screen and (min-width:860px) {
+    .activepill{
+        border-bottom-left-radius: 16px;
+        border-top-left-radius:16px;
+    }
+    .footer-base{
+        padding:32px 16px 19px 24px;
+    }
+    .footer-base-nav ul{
+        margin-top:0;
+    }
+    .footer-base-nav ul li{
+        padding-top:3px;
+    }
     .blog-img{
         padding:8px 8px 0px 12px;
     }
@@ -2434,10 +2447,12 @@ footer {
 
     footer {
         margin-top: 0;
-        margin-bottom: 70px;
         position: relative;
     }
-
+    .float-message-section{
+        height:71px;
+        background:#f7f7f7;
+    }
     .float-message {
         display: inline;
         padding: 1rem;
@@ -2664,7 +2679,7 @@ footer {
     }
 
     .footer-base-nav {
-        margin-left: 30px;
+        margin-left: 33px;
     }
 
     .utility-container {
@@ -2831,6 +2846,7 @@ footer {
     .footer-base-nav ul li {
         padding-right: 24px;
     }
+
     #products-services{
         padding-inline:3.5rem;
     }
@@ -2880,9 +2896,6 @@ footer {
 
     .footer-base-nav ul{
         margin:0
-    }
-    .footer-base-nav ul li{
-        padding-top:0;
     }
     .customer-container {
         padding-inline: 56px;
@@ -3020,8 +3033,8 @@ footer {
         letter-spacing:-.05em;
     }
 
-    .mainhead-ps{
-        font-size:21px;
+    .mainhead-ps h2{
+        font-size:32px;
         letter-spacing:-.05em;
     }
     .inner-head h3{
@@ -3057,10 +3070,44 @@ footer {
         font-size:40px;
         letter-spacing:-2px;
     }
-    .activepill{
-        border-bottom-left-radius: 16px;
-        border-top-left-radius:16px;
+
+    .optimize-head h3{
+        font-size:24px;
+        letter-spacing:-.05em;
     }
+    .view-all-spn{
+        margin-top:4px;
+    }
+    .link-head{
+        margin-top:14px;
+    }
+    .tab-panel-img{
+        width:840.656px;
+    }
+    .global-head h2{
+        font-size:48px;
+        letter-spacing:-.05em;
+    }
+    .global-para{
+        font-size:20px;
+        margin-top:34px;
+    }
+    .content-cont{
+        margin-top:8px;
+    }
+    .global-infra{
+        height:228px
+    }
+    .glob-btn{
+        padding:12px 16px;
+    }
+    .global-btn{
+        margin-top:33px;
+    }
+    .customer-main-head h2{
+        font-size:32px;
+    }
+
     .discover-head{
         font-size:21px;
         letter-spacing:-.05em;
